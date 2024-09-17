@@ -31,5 +31,18 @@
     $nightmare_bc = new Movie("Nightmare Before Christmas", "Henry Selick", "animazione", 1993, "73 minuti" );
     //applico la funzione show
     echo $nightmare_bc->show();
+    echo "<hr>";
+
+    //creo altre istanze
+    $hereditary = new Movie("Hereditary - Le radici del male", "Ari Aster", "horror", 2018, "127 minuti" );
+    echo $hereditary->show();
+    echo "<hr>";
+
+    $donnie = new Movie("Donnie Darko", "Richard Kelly", "fantascienza", 2001, "113 minuti" );
+    echo $donnie->show();
+    echo "<hr>";
+
+
+
 
 ?>
