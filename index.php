@@ -22,9 +22,14 @@
         //creo un metodo che mi permetta di visualizzare a schermo le istanze
         public function show(){
 
-            return "titolo: ".$this->title." regista: ".$this->director." genere: ".$this->genre." plot: ".$this->year." durata: ".$this->length;
+            return "Titolo: ".$this->title." | Regista: ".$this->director." | Genere: ".$this->genre." | Anno: ".$this->year." | Durata: ".$this->length;
 
         }
     }
+
+    //creo un'istanza
+    $nightmare_bc = new Movie("Nightmare Before Christmas", "Henry Selick", "animazione", 1993, "73 minuti" );
+    //applico la funzione show
+    echo $nightmare_bc->show();
 
 ?>
