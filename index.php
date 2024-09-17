@@ -7,16 +7,23 @@
         public $title;
         public $director;
         public $genre;
-        public $description;
+        public $year;
         public $length;
 
         //creo una funzione __construction 
-        function __construct($_title, $_director, $_genre, $_description, $_length ){
+        function __construct($_title, $_director, $_genre, $_year, $_length ){
             $this->title = $_title;
             $this->director = $_director;
             $this->genre = $_genre;
-            $this->description = $_description;
+            $this->year = $_year;
             $this->length = $_length;
+        }
+
+        //creo un metodo che mi permetta di visualizzare a schermo le istanze
+        public function show(){
+
+            return "titolo: ".$this->title." regista: ".$this->director." genere: ".$this->genre." plot: ".$this->year." durata: ".$this->length;
+
         }
     }
 
