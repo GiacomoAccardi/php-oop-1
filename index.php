@@ -9,6 +9,15 @@
         public $genre;
         public $description;
         public $length;
+
+        //creo una funzione __construction 
+        function __construct($_title, $_director, $_genre, $_description, $_length ){
+            $this->title = $_title;
+            $this->director = $_director;
+            $this->genre = $_genre;
+            $this->description = $_description;
+            $this->length = $_length;
+        }
     }
 
 ?>
